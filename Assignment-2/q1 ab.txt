@@ -3,67 +3,8 @@
 //Q1
 
 
-import java.util.*;
-
 public abstract class Instrument
 {
     public abstract void Play();
 }
 
-class Piano extends Instrument
-{
-    public void Play()
-    {
-        System.out.println("Piano is playing tan tan tan tan");
-    }
-}
-class Flute extends Instrument
-{
-     public void Play()
-    {
-        System.out.println("Flute is playing toot toot toot toot");
-    }
-}
-class Guitar extends Instrument
-{
-     public void Play()
-    {
-        System.out.println("Guitar is playing tin tin tin");
-    }
-}
-public class Main
-{
-
-	public static void main(String[] args) {
-	    Instrument in[]=new Instrument[10];
-	    in[0]=new Piano();
-	    in[1]=new Flute();
-	    in[2]=new Guitar();
-	    in[3]=new Piano();
-	    in[4]=new Flute();
-	    in[5]=new Guitar();
-	    in[6]=new Piano();
-	    in[7]=new Flute();
-	    in[8]=new Guitar();
-	    in[9]=new Piano();
-	    
-	    for(int i=0;i<in.length;i++)
-	    {
-	        if (in[i] instanceof Piano)
-	        {
-	            System.out.println("Yes its piano");
-	            in[i].Play();
-	        }
-	        if(in[i] instanceof Flute)
-	        {
-	             System.out.println("Yes its Flute");
-	            in[i].Play();
-	        }
-	         if(in[i] instanceof Guitar)
-	        {
-	             System.out.println("Yes its Guitar");
-	            in[i].Play();
-	        }
-	    }
-	} 
-}
