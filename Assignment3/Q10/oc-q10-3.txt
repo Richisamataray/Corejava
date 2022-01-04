@@ -1,0 +1,24 @@
+//oops-q10-3
+
+import java.util.*;
+
+
+class Numsum
+{
+	public static int Sum(int n)
+	{
+		if (n <= 1)
+			return n;
+		return n + Sum(n - 1);
+	}
+	
+	public static void main(String args[])
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter sum of natural number upto:");
+	int n=sc.nextInt();
+		System.out.println("The sum is:"+Sum(n));
+	}
+}
+
+
