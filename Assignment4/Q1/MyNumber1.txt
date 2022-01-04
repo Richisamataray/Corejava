@@ -1,0 +1,20 @@
+//exception
+
+import java.util.Scanner;
+
+public class MyNumber {
+public static void main(String[] args) {
+	Scanner sc =  new Scanner(System.in);
+	System.out.println("Enter the 1st number :");
+	int n1 = sc.nextInt();
+	System.out.println("Enter the 2nd number :");
+	int n2 = sc.nextInt();
+	System.out.println(" Addition");
+	System.out.println("Subtract");
+	System.out.println(" Multiplication");
+	System.out.println("Division");
+	int n3 = sc.nextInt();
+	MyNumber num = new MyNumber(n1,n2);
+	num.check(n3);
+}
+}
