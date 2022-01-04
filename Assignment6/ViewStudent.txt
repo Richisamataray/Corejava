@@ -1,0 +1,26 @@
+public class StudentData {
+
+	Map<Integer,Student> s = new HashMap<Integer,Student>();
+	public void addStudent(Student s){
+		int n = Student.getId();
+		s.put(n, s);
+	}
+	
+	
+	@Override
+	public String toString() {
+		return  s ;
+	}
+
+
+	public void viewStudents(){
+		Set<Integer> key = s.keySet();
+		for(Integer i : key){
+			System.out.println(s.get(i));
+		}
+	}
+	public void viewStudent(Integer id){
+		System.out.println("Student id is"+id);
+		System.out.println(s.get(id));
+	}
+}

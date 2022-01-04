@@ -1,0 +1,18 @@
+//collection-2
+
+public class Studdetail {
+
+	public static void main(String[] args) {
+		StudentData s= new StudentData ();
+		Student stud1 = new Student("Girish", "girish@gmail.com", "Java");
+		Student stud2 = new Student("Ronit", "ronit@gmail.com", "Java");
+		Student stud3 = new Student("Mohit", "mohit@gmail.com", "Java");
+
+		s.addStudent(stud1);
+		s.addStudent(stud2);
+		s.addStudent(stud3);
+		s.viewStudent();
+		s.viewStudent(10001);
+		
+	}
+}

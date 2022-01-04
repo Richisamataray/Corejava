@@ -1,0 +1,12 @@
+//collection-2
+
+
+class Detail {
+	
+	public static void main(String[] args) {
+		System.out.println("Java Virtual Machine name  : "+System.getProperty("java.vm.name"));
+		 System.out.println("Java Library Path:" + System.getProperty("java.library.path"));
+		System.out.println("Operating System Name: " + System.getProperty("os.name"));
+	    
+	}
+}

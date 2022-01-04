@@ -1,0 +1,12 @@
+//collection-2
+
+public class AddStates {
+
+	public static void main(String[] args) {
+		StatesInfo obj = new StatesInfo();
+		obj.addState("Nagaland");
+		obj.addState("Tripura");
+		obj.addState("Uttar Pradesh");
+		obj.viewStates();
+	}
+}

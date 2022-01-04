@@ -1,0 +1,14 @@
+//collection-2
+
+
+public class State_Capital_Info {
+
+	public static void main(String[] args) {
+		State_Capital_Info obj = new State_Capital_Info();
+		obj.add_state_capital("Bihar", "Patna");
+		obj.add_state_capital("	Haryana", "Chandigarh");
+		obj.add_state_capital("Jharkhand", "Ranchi");
+		obj.add_state_capital("Karnataka", "Bengaluru");
+		obj.viewCapital("Karnataka");
+	}
+}
