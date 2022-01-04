@@ -1,0 +1,34 @@
+//collection-q4
+
+
+import java.util.*;
+public class Checkname {
+	public Set<String> checkName(Set<String> s, String name){
+		boolean flag=false;
+		for(String str :s){
+			if(str.equals(name)){
+				flag=true;
+				
+			}
+		}
+		if(!flag){
+			System.out.println("Name is not found");
+		}else{
+			s.remove(name);
+		}
+		return s;
+		}
+	
+	public static void main(String[] args) {
+		Checkname r = new Checkname();
+		Set<String> str = new HashSet<String>();
+		str.add("Girish");
+		str.add("Komal");
+		str.add("Mohit");
+		str.add("Rema");
+		System.out.println(str);
+		
+		System.out.println(r.checkName(str, "Komal"));
+		
+	}
+}

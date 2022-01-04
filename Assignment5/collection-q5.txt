@@ -1,0 +1,20 @@
+//collection-q5
+
+
+import java.util.*;
+public class MapElement {
+	
+	public void viewElements(Map<Integer, String> m){
+		
+		System.out.println(m.entrySet());
+		}
+	
+	public static void main(String[] args) {
+		MapElement map = new MapElement();
+		Map<Integer, String> m1 = new HashMap<Integer, String>();
+		m1.put(1001, "Manoj");
+		m1.put(1002, "Krish");
+		map.viewElements(m1);
+	}
+
+}

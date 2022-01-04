@@ -1,0 +1,24 @@
+//collection1-q3
+
+
+import java.util.*;
+public class ArrayofInteger {
+	
+	public Map<Integer,Integer> getMap(Integer num[]){
+		Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+		for(Integer i :num){
+			Integer n = (int) Math.pow(i, 3);
+			map.put(i, n);
+		}
+		return map;
+		}
+	
+	public static void main(String[] args) {
+		
+		ArrayofInteger a = new ArrayofInteger();
+		Integer[] i = {1,2,3,4,5};
+		Map<Integer,Integer> map = a.getMap(i);
+		System.out.println(map);
+	}
+
+}
